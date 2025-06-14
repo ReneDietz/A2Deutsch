@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>練習問題 - A2ドイツ語</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1><a href="index.html">A2ドイツ語</a></h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">ホーム</a></li>
+          <li><a href="grammar.html" class="nav-link">文法</a></li>
+          <li><a href="vocabulary.html" class="nav-link">語彙</a></li>
+          <li><a href="exercises.html" class="nav-link active">練習問題</a></li>
+          <li><a href="tips.html" class="nav-link">試験対策</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="exercises-page">
+    <div class="container">
+      <div class="page-header">
+        <h1>練習問題</h1>
+        <p>ゲーテA2試験形式の練習問題で実力をチェックしましょう</p>
+      </div>
+
+      <div class="exercise-nav">
+        <button class="exercise-nav-btn active" data-type="grammar">文法問題</button>
+        <button class="exercise-nav-btn" data-type="vocabulary">語彙問題</button>
+        <button class="exercise-nav-btn" data-type="reading">読解問題</button>
+      </div>
+
+      <div class="exercise-content">
+        <div class="exercise-section" id="grammar-exercises">
+          <h2>文法問題</h2>
+          
+          <div class="exercise-item">
+            <h3>問題1: 動詞の活用</h3>
+            <p>正しい動詞の形を選んでください。</p>
+            <div class="question">
+              <p>Ich _____ jeden Tag Deutsch.</p>
+              <div class="options">
+                <label><input type="radio" name="q1" value="a"> a) lerne</label>
+                <label><input type="radio" name="q1" value="b"> b) lernst</label>
+                <label><input type="radio" name="q1" value="c"> c) lernt</label>
+                <label><input type="radio" name="q1" value="d"> d) lernen</label>
+              </div>
+              <div class="answer" id="answer1" style="display: none;">
+                <p><strong>正解: a) lerne</strong></p>
+                <p>解説: 主語が「ich」の場合、動詞「lernen」は「lerne」に活用されます。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('answer1')">答えを確認</button>
+            </div>
+          </div>
+
+          <div class="exercise-item">
+            <h3>問題2: 完了形</h3>
+            <p>正しい完了形を選んでください。</p>
+            <div class="question">
+              <p>Gestern _____ ich Pizza _____.</p>
+              <div class="options">
+                <label><input type="radio" name="q2" value="a"> a) habe ... gegessen</label>
+                <label><input type="radio" name="q2" value="b"> b) bin ... gegessen</label>
+                <label><input type="radio" name="q2" value="c"> c) habe ... geessen</label>
+                <label><input type="radio" name="q2" value="d"> d) bin ... geessen</label>
+              </div>
+              <div class="answer" id="answer2" style="display: none;">
+                <p><strong>正解: a) habe ... gegessen</strong></p>
+                <p>解説: 「essen」の完了形は「haben + gegessen」です。他動詞なので助動詞は「haben」を使います。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('answer2')">答えを確認</button>
+            </div>
+          </div>
+
+          <div class="exercise-item">
+            <h3>問題3: 冠詞の格変化</h3>
+            <p>正しい冠詞を選んでください。</p>
+            <div class="question">
+              <p>Ich gebe _____ Kind das Buch.</p>
+              <div class="options">
+                <label><input type="radio" name="q3" value="a"> a) der</label>
+                <label><input type="radio" name="q3" value="b"> b) die</label>
+                <label><input type="radio" name="q3" value="c"> c) dem</label>
+                <label><input type="radio" name="q3" value="d"> d) den</label>
+              </div>
+              <div class="answer" id="answer3" style="display: none;">
+                <p><strong>正解: c) dem</strong></p>
+                <p>解説: 「geben」は3格の目的語を取ります。「das Kind」の3格は「dem Kind」です。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('answer3')">答えを確認</button>
+            </div>
+          </div>
+
+          <div class="exercise-item">
+            <h3>問題4: モーダル動詞</h3>
+            <p>正しいモーダル動詞を選んでください。</p>
+            <div class="question">
+              <p>Du _____ früh aufstehen. (義務)</p>
+              <div class="options">
+                <label><input type="radio" name="q4" value="a"> a) kannst</label>
+                <label><input type="radio" name="q4" value="b"> b) willst</label>
+                <label><input type="radio" name="q4" value="c"> c) musst</label>
+                <label><input type="radio" name="q4" value="d"> d) darfst</label>
+              </div>
+              <div class="answer" id="answer4" style="display: none;">
+                <p><strong>正解: c) musst</strong></p>
+                <p>解説: 義務を表す場合は「müssen」を使います。主語が「du」なので「musst」になります。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('answer4')">答えを確認</button>
+            </div>
+          </div>
+
+          <div class="exercise-item">
+            <h3>問題5: 副文（従属節）</h3>
+            <p>正しい語順を選んでください。</p>
+            <div class="question">
+              <p>Ich bleibe zu Hause, weil _____.</p>
+              <div class="options">
+                <label><input type="radio" name="q5" value="a"> a) ich bin krank</label>
+                <label><input type="radio" name="q5" value="b"> b) ich krank bin</label>
+                <label><input type="radio" name="q5" value="c"> c) bin ich krank</label>
+                <label><input type="radio" name="q5" value="d"> d) krank ich bin</label>
+              </div>
+              <div class="answer" id="answer5" style="display: none;">
+                <p><strong>正解: b) ich krank bin</strong></p>
+                <p>解説: 「weil」で始まる副文では、動詞が文末に来ます。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('answer5')">答えを確認</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise-section" id="vocabulary-exercises" style="display: none;">
+          <h2>語彙問題</h2>
+          
+          <div class="exercise-item">
+            <h3>問題1: 家族</h3>
+            <p>正しい単語を選んでください。</p>
+            <div class="question">
+              <p>Meine _____ kocht sehr gut. (私の母はとても料理が上手です)</p>
+              <div class="options">
+                <label><input type="radio" name="v1" value="a"> a) Vater</label>
+                <label><input type="radio" name="v1" value="b"> b) Mutter</label>
+                <label><input type="radio" name="v1" value="c"> c) Bruder</label>
+                <label><input type="radio" name="v1" value="d"> d) Schwester</label>
+              </div>
+              <div class="answer" id="vanswer1" style="display: none;">
+                <p><strong>正解: b) Mutter</strong></p>
+                <p>解説: 「母」はドイツ語で「die Mutter」です。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('vanswer1')">答えを確認</button>
+            </div>
+          </div>
+
+          <div class="exercise-item">
+            <h3>問題2: 交通手段</h3>
+            <p>正しい単語を選んでください。</p>
+            <div class="question">
+              <p>Ich fahre mit dem _____ zur Arbeit. (私はバスで仕事に行きます)</p>
+              <div class="options">
+                <label><input type="radio" name="v2" value="a"> a) Auto</label>
+                <label><input type="radio" name="v2" value="b"> b) Zug</label>
+                <label><input type="radio" name="v2" value="c"> c) Bus</label>
+                <label><input type="radio" name="v2" value="d"> d) Flugzeug</label>
+              </div>
+              <div class="answer" id="vanswer2" style="display: none;">
+                <p><strong>正解: c) Bus</strong></p>
+                <p>解説: 「バス」はドイツ語で「der Bus」です。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('vanswer2')">答えを確認</button>
+            </div>
+          </div>
+
+          <div class="exercise-item">
+            <h3>問題3: 食べ物</h3>
+            <p>正しい単語を選んでください。</p>
+            <div class="question">
+              <p>Zum Frühstück esse ich _____. (朝食にパンを食べます)</p>
+              <div class="options">
+                <label><input type="radio" name="v3" value="a"> a) Fleisch</label>
+                <label><input type="radio" name="v3" value="b"> b) Brot</label>
+                <label><input type="radio" name="v3" value="c"> c) Gemüse</label>
+                <label><input type="radio" name="v3" value="d"> d) Obst</label>
+              </div>
+              <div class="answer" id="vanswer3" style="display: none;">
+                <p><strong>正解: b) Brot</strong></p>
+                <p>解説: 「パン」はドイツ語で「das Brot」です。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('vanswer3')">答えを確認</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="exercise-section" id="reading-exercises" style="display: none;">
+          <h2>読解問題</h2>
+          
+          <div class="exercise-item">
+            <h3>テキスト1</h3>
+            <div class="reading-text">
+              <p>Hallo, ich heiße Maria und komme aus Spanien. Ich wohne seit zwei Jahren in Deutschland und lerne Deutsch. Jeden Morgen stehe ich um 7 Uhr auf und gehe zur Sprachschule. Die Schule ist nicht weit von meinem Haus. Nach dem Unterricht gehe ich oft mit meinen Freunden ins Café. Am Wochenende besuche ich gern Museen oder gehe spazieren.</p>
+            </div>
+            
+            <div class="question">
+              <p><strong>問題1:</strong> Woher kommt Maria?</p>
+              <div class="options">
+                <label><input type="radio" name="r1" value="a"> a) Deutschland</label>
+                <label><input type="radio" name="r1" value="b"> b) Spanien</label>
+                <label><input type="radio" name="r1" value="c"> c) Italien</label>
+                <label><input type="radio" name="r1" value="d"> d) Frankreich</label>
+              </div>
+              <div class="answer" id="ranswer1" style="display: none;">
+                <p><strong>正解: b) Spanien</strong></p>
+                <p>解説: テキストに「ich komme aus Spanien」とあります。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('ranswer1')">答えを確認</button>
+            </div>
+
+            <div class="question">
+              <p><strong>問題2:</strong> Wann steht Maria auf?</p>
+              <div class="options">
+                <label><input type="radio" name="r2" value="a"> a) um 6 Uhr</label>
+                <label><input type="radio" name="r2" value="b"> b) um 7 Uhr</label>
+                <label><input type="radio" name="r2" value="c"> c) um 8 Uhr</label>
+                <label><input type="radio" name="r2" value="d"> d) um 9 Uhr</label>
+              </div>
+              <div class="answer" id="ranswer2" style="display: none;">
+                <p><strong>正解: b) um 7 Uhr</strong></p>
+                <p>解説: テキストに「stehe ich um 7 Uhr auf」とあります。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('ranswer2')">答えを確認</button>
+            </div>
+
+            <div class="question">
+              <p><strong>問題3:</strong> Was macht Maria am Wochenende?</p>
+              <div class="options">
+                <label><input type="radio" name="r3" value="a"> a) Sie arbeitet</label>
+                <label><input type="radio" name="r3" value="b"> b) Sie schläft</label>
+                <label><input type="radio" name="r3" value="c"> c) Sie besucht Museen</label>
+                <label><input type="radio" name="r3" value="d"> d) Sie kocht</label>
+              </div>
+              <div class="answer" id="ranswer3" style="display: none;">
+                <p><strong>正解: c) Sie besucht Museen</strong></p>
+                <p>解説: テキストに「Am Wochenende besuche ich gern Museen」とあります。</p>
+              </div>
+              <button class="check-btn" onclick="showAnswer('ranswer3')">答えを確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="score-section">
+        <button class="score-btn" onclick="calculateScore()">総合スコアを計算</button>
+        <div id="score-result" class="score-result" style="display: none;"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>A2ドイツ語</h3>
+          <p>日本人学習者のためのゲーテA2試験対策サイト</p>
+        </div>
+        <div class="footer-section">
+          <h4>学習コンテンツ</h4>
+          <ul>
+            <li><a href="grammar.html">文法</a></li>
+            <li><a href="vocabulary.html">語彙</a></li>
+            <li><a href="exercises.html">練習問題</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>試験情報</h4>
+          <ul>
+            <li><a href="tips.html">試験対策</a></li>
+            <li><a href="#" onclick="alert('準備中です')">模擬試験</a></li>
+            <li><a href="#" onclick="alert('準備中です')">学習計画</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 A2ドイツ語学習サイト. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

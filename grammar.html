@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文法 - A2ドイツ語</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1><a href="index.html">A2ドイツ語</a></h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">ホーム</a></li>
+          <li><a href="grammar.html" class="nav-link active">文法</a></li>
+          <li><a href="vocabulary.html" class="nav-link">語彙</a></li>
+          <li><a href="exercises.html" class="nav-link">練習問題</a></li>
+          <li><a href="tips.html" class="nav-link">試験対策</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="grammar-page">
+    <div class="container">
+      <div class="page-header">
+        <h1>A2文法項目</h1>
+        <p>ゲーテA2試験に必要な文法項目を体系的に学習しましょう</p>
+      </div>
+
+      <div class="grammar-nav">
+        <button class="grammar-nav-btn active" data-category="all">すべて</button>
+        <button class="grammar-nav-btn" data-category="verbs">動詞</button>
+        <button class="grammar-nav-btn" data-category="nouns">名詞・冠詞</button>
+        <button class="grammar-nav-btn" data-category="adjectives">形容詞</button>
+        <button class="grammar-nav-btn" data-category="syntax">文構造</button>
+      </div>
+
+      <div class="grammar-content">
+        <div class="grammar-item" data-category="verbs">
+          <div class="grammar-header">
+            <h2>1. 現在形（Präsens）</h2>
+            <span class="difficulty">基礎</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">動詞の基本活用形。規則動詞と不規則動詞の活用を覚えましょう。</p>
+            
+            <div class="example-section">
+              <h4>規則動詞の例：lernen（学ぶ）</h4>
+              <div class="conjugation-table">
+                <div class="conjugation-row">
+                  <span class="pronoun">ich</span>
+                  <span class="verb">lerne</span>
+                  <span class="translation">私は学ぶ</span>
+                </div>
+                <div class="conjugation-row">
+                  <span class="pronoun">du</span>
+                  <span class="verb">lernst</span>
+                  <span class="translation">君は学ぶ</span>
+                </div>
+                <div class="conjugation-row">
+                  <span class="pronoun">er/sie/es</span>
+                  <span class="verb">lernt</span>
+                  <span class="translation">彼/彼女/それは学ぶ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="example-sentences">
+              <h4>例文</h4>
+              <div class="sentence">
+                <p class="german">Ich lerne jeden Tag Deutsch.</p>
+                <p class="japanese">私は毎日ドイツ語を学んでいます。</p>
+              </div>
+              <div class="sentence">
+                <p class="german">Sie arbeitet in einem Büro.</p>
+                <p class="japanese">彼女はオフィスで働いています。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grammar-item" data-category="verbs">
+          <div class="grammar-header">
+            <h2>2. 完了形（Perfekt）</h2>
+            <span class="difficulty">重要</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">過去の出来事を表現する最も重要な時制。haben/sein + 過去分詞で作ります。</p>
+            
+            <div class="rule-box">
+              <h4>助動詞の選び方</h4>
+              <ul>
+                <li><strong>haben</strong>: ほとんどの動詞（他動詞、再帰動詞など）</li>
+                <li><strong>sein</strong>: 移動・変化を表す自動詞（gehen, kommen, werden など）</li>
+              </ul>
+            </div>
+
+            <div class="example-sentences">
+              <h4>例文</h4>
+              <div class="sentence">
+                <p class="german">Ich habe gestern Pizza gegessen.</p>
+                <p class="japanese">私は昨日ピザを食べました。</p>
+              </div>
+              <div class="sentence">
+                <p class="german">Sie ist nach Berlin gefahren.</p>
+                <p class="japanese">彼女はベルリンに行きました。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grammar-item" data-category="verbs">
+          <div class="grammar-header">
+            <h2>3. モーダル動詞（Modalverben）</h2>
+            <span class="difficulty">重要</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">話し手の態度や可能性を表す動詞。文末に不定詞を置きます。</p>
+            
+            <div class="modal-verbs">
+              <div class="modal-verb">
+                <h4>können（できる）</h4>
+                <div class="sentence">
+                  <p class="german">Ich kann Deutsch sprechen.</p>
+                  <p class="japanese">私はドイツ語を話すことができます。</p>
+                </div>
+              </div>
+              <div class="modal-verb">
+                <h4>müssen（〜しなければならない）</h4>
+                <div class="sentence">
+                  <p class="german">Du musst früh aufstehen.</p>
+                  <p class="japanese">君は早く起きなければならない。</p>
+                </div>
+              </div>
+              <div class="modal-verb">
+                <h4>wollen（〜したい）</h4>
+                <div class="sentence">
+                  <p class="german">Wir wollen ins Kino gehen.</p>
+                  <p class="japanese">私たちは映画館に行きたい。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grammar-item" data-category="nouns">
+          <div class="grammar-header">
+            <h2>4. 冠詞の格変化</h2>
+            <span class="difficulty">重要</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">ドイツ語の名詞は格（1格〜4格）によって冠詞が変化します。</p>
+            
+            <div class="declension-table">
+              <h4>定冠詞（der, die, das）</h4>
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>男性</th>
+                    <th>女性</th>
+                    <th>中性</th>
+                    <th>複数</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1格</td>
+                    <td>der</td>
+                    <td>die</td>
+                    <td>das</td>
+                    <td>die</td>
+                  </tr>
+                  <tr>
+                    <td>3格</td>
+                    <td>dem</td>
+                    <td>der</td>
+                    <td>dem</td>
+                    <td>den</td>
+                  </tr>
+                  <tr>
+                    <td>4格</td>
+                    <td>den</td>
+                    <td>die</td>
+                    <td>das</td>
+                    <td>die</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="example-sentences">
+              <h4>例文</h4>
+              <div class="sentence">
+                <p class="german">Der Mann gibt dem Kind das Buch.</p>
+                <p class="japanese">その男性は子供に本を渡します。</p>
+                <p class="explanation">der Mann (1格) → dem Kind (3格) → das Buch (4格)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grammar-item" data-category="adjectives">
+          <div class="grammar-header">
+            <h2>5. 形容詞の格変化</h2>
+            <span class="difficulty">上級</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">形容詞は冠詞の種類と名詞の格・性・数によって語尾が変化します。</p>
+            
+            <div class="adjective-rules">
+              <h4>定冠詞付き形容詞</h4>
+              <div class="sentence">
+                <p class="german">der kleine Hund → den kleinen Hund</p>
+                <p class="japanese">その小さな犬 → その小さな犬を</p>
+              </div>
+              
+              <h4>不定冠詞付き形容詞</h4>
+              <div class="sentence">
+                <p class="german">ein kleiner Hund → einen kleinen Hund</p>
+                <p class="japanese">小さな犬 → 小さな犬を</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grammar-item" data-category="syntax">
+          <div class="grammar-header">
+            <h2>6. 副文（従属節）</h2>
+            <span class="difficulty">重要</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">weil, dass, wenn などの接続詞で始まる副文では、動詞が文末に来ます。</p>
+            
+            <div class="subordinate-clauses">
+              <div class="clause-type">
+                <h4>理由を表す：weil</h4>
+                <div class="sentence">
+                  <p class="german">Ich bleibe zu Hause, weil ich krank bin.</p>
+                  <p class="japanese">病気なので家にいます。</p>
+                </div>
+              </div>
+              
+              <div class="clause-type">
+                <h4>条件を表す：wenn</h4>
+                <div class="sentence">
+                  <p class="german">Wenn es regnet, bleibe ich zu Hause.</p>
+                  <p class="japanese">雨が降ったら、家にいます。</p>
+                </div>
+              </div>
+              
+              <div class="clause-type">
+                <h4>内容を表す：dass</h4>
+                <div class="sentence">
+                  <p class="german">Ich denke, dass er recht hat.</p>
+                  <p class="japanese">彼が正しいと思います。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grammar-item" data-category="syntax">
+          <div class="grammar-header">
+            <h2>7. zu不定詞</h2>
+            <span class="difficulty">中級</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">目的や意図を表現する際に使用。分離動詞の場合は語幹の間にzuを入れます。</p>
+            
+            <div class="example-sentences">
+              <h4>例文</h4>
+              <div class="sentence">
+                <p class="german">Ich habe keine Zeit, Deutsch zu lernen.</p>
+                <p class="japanese">ドイツ語を学ぶ時間がありません。</p>
+              </div>
+              <div class="sentence">
+                <p class="german">Er vergisst oft, die Tür abzuschließen.</p>
+                <p class="japanese">彼はよくドアに鍵をかけるのを忘れます。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grammar-item" data-category="syntax">
+          <div class="grammar-header">
+            <h2>8. 前置詞と格</h2>
+            <span class="difficulty">重要</span>
+          </div>
+          <div class="grammar-body">
+            <p class="description">前置詞は特定の格を要求します。A2レベルでは主要な前置詞を覚えましょう。</p>
+            
+            <div class="preposition-groups">
+              <div class="prep-group">
+                <h4>3格を取る前置詞</h4>
+                <p><strong>mit, zu, von, bei, nach, aus</strong></p>
+                <div class="sentence">
+                  <p class="german">Ich fahre mit dem Bus.</p>
+                  <p class="japanese">私はバスで行きます。</p>
+                </div>
+              </div>
+              
+              <div class="prep-group">
+                <h4>4格を取る前置詞</h4>
+                <p><strong>für, ohne, durch, gegen, um</strong></p>
+                <div class="sentence">
+                  <p class="german">Das Geschenk ist für dich.</p>
+                  <p class="japanese">そのプレゼントは君のためです。</p>
+                </div>
+              </div>
+              
+              <div class="prep-group">
+                <h4>3格/4格を取る前置詞（場所/方向）</h4>
+                <p><strong>in, an, auf, über, unter, vor, hinter</strong></p>
+                <div class="sentence">
+                  <p class="german">Ich bin in der Schule. (3格 - 場所)</p>
+                  <p class="japanese">私は学校にいます。</p>
+                </div>
+                <div class="sentence">
+                  <p class="german">Ich gehe in die Schule. (4格 - 方向)</p>
+                  <p class="japanese">私は学校に行きます。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>A2ドイツ語</h3>
+          <p>日本人学習者のためのゲーテA2試験対策サイト</p>
+        </div>
+        <div class="footer-section">
+          <h4>学習コンテンツ</h4>
+          <ul>
+            <li><a href="grammar.html">文法</a></li>
+            <li><a href="vocabulary.html">語彙</a></li>
+            <li><a href="exercises.html">練習問題</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>試験情報</h4>
+          <ul>
+            <li><a href="tips.html">試験対策</a></li>
+            <li><a href="#" onclick="alert('準備中です')">模擬試験</a></li>
+            <li><a href="#" onclick="alert('準備中です')">学習計画</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 A2ドイツ語学習サイト. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

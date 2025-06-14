@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>語彙 - A2ドイツ語</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1><a href="index.html">A2ドイツ語</a></h1>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">ホーム</a></li>
+          <li><a href="grammar.html" class="nav-link">文法</a></li>
+          <li><a href="vocabulary.html" class="nav-link active">語彙</a></li>
+          <li><a href="exercises.html" class="nav-link">練習問題</a></li>
+          <li><a href="tips.html" class="nav-link">試験対策</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="vocabulary-page">
+    <div class="container">
+      <div class="page-header">
+        <h1>A2重要語彙</h1>
+        <p>ゲーテA2試験に頻出する重要単語を分野別に学習しましょう</p>
+      </div>
+
+      <div class="vocab-nav">
+        <button class="vocab-nav-btn active" data-category="all">すべて</button>
+        <button class="vocab-nav-btn" data-category="family">家族・人</button>
+        <button class="vocab-nav-btn" data-category="daily">日常生活</button>
+        <button class="vocab-nav-btn" data-category="work">仕事・学校</button>
+        <button class="vocab-nav-btn" data-category="travel">旅行・交通</button>
+        <button class="vocab-nav-btn" data-category="food">食べ物</button>
+        <button class="vocab-nav-btn" data-category="time">時間・天気</button>
+      </div>
+
+      <div class="search-box">
+        <input type="text" id="vocab-search" placeholder="単語を検索...">
+      </div>
+
+      <div class="vocabulary-content">
+        <div class="vocab-category" data-category="family">
+          <h2>家族・人間関係</h2>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-german">die Familie</div>
+              <div class="vocab-japanese">家族</div>
+              <div class="vocab-example">Meine Familie ist groß. (私の家族は大きいです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Vater</div>
+              <div class="vocab-japanese">父</div>
+              <div class="vocab-example">Mein Vater arbeitet viel. (私の父はよく働きます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Mutter</div>
+              <div class="vocab-japanese">母</div>
+              <div class="vocab-example">Meine Mutter kocht gern. (私の母は料理が好きです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Bruder</div>
+              <div class="vocab-japanese">兄弟</div>
+              <div class="vocab-example">Ich habe einen Bruder. (私には兄弟がいます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Schwester</div>
+              <div class="vocab-japanese">姉妹</div>
+              <div class="vocab-example">Meine Schwester ist älter. (私の姉は年上です)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Freund</div>
+              <div class="vocab-japanese">友達（男性）</div>
+              <div class="vocab-example">Er ist mein bester Freund. (彼は私の親友です)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Freundin</div>
+              <div class="vocab-japanese">友達（女性）</div>
+              <div class="vocab-example">Sie ist eine gute Freundin. (彼女は良い友達です)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Nachbar</div>
+              <div class="vocab-japanese">隣人（男性）</div>
+              <div class="vocab-example">Unser Nachbar ist sehr nett. (私たちの隣人はとても親切です)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vocab-category" data-category="daily">
+          <h2>日常生活</h2>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-german">das Haus</div>
+              <div class="vocab-japanese">家</div>
+              <div class="vocab-example">Wir wohnen in einem großen Haus. (私たちは大きな家に住んでいます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Wohnung</div>
+              <div class="vocab-japanese">アパート</div>
+              <div class="vocab-example">Ich suche eine neue Wohnung. (私は新しいアパートを探しています)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Zimmer</div>
+              <div class="vocab-japanese">部屋</div>
+              <div class="vocab-example">Mein Zimmer ist klein aber gemütlich. (私の部屋は小さいですが居心地が良いです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Küche</div>
+              <div class="vocab-japanese">キッチン</div>
+              <div class="vocab-example">In der Küche koche ich gern. (キッチンで料理するのが好きです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Badezimmer</div>
+              <div class="vocab-japanese">バスルーム</div>
+              <div class="vocab-example">Das Badezimmer ist sehr sauber. (バスルームはとてもきれいです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">schlafen</div>
+              <div class="vocab-japanese">眠る</div>
+              <div class="vocab-example">Ich schlafe jeden Tag 8 Stunden. (私は毎日8時間眠ります)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">aufstehen</div>
+              <div class="vocab-japanese">起きる</div>
+              <div class="vocab-example">Ich stehe um 7 Uhr auf. (私は7時に起きます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">duschen</div>
+              <div class="vocab-japanese">シャワーを浴びる</div>
+              <div class="vocab-example">Ich dusche jeden Morgen. (私は毎朝シャワーを浴びます)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vocab-category" data-category="work">
+          <h2>仕事・学校</h2>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-german">die Arbeit</div>
+              <div class="vocab-japanese">仕事</div>
+              <div class="vocab-example">Meine Arbeit macht mir Spaß. (私の仕事は楽しいです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Beruf</div>
+              <div class="vocab-japanese">職業</div>
+              <div class="vocab-example">Was ist Ihr Beruf? (あなたの職業は何ですか？)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Büro</div>
+              <div class="vocab-japanese">オフィス</div>
+              <div class="vocab-example">Ich arbeite in einem Büro. (私はオフィスで働いています)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Schule</div>
+              <div class="vocab-japanese">学校</div>
+              <div class="vocab-example">Die Schule beginnt um 8 Uhr. (学校は8時に始まります)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Lehrer</div>
+              <div class="vocab-japanese">先生（男性）</div>
+              <div class="vocab-example">Unser Lehrer ist sehr nett. (私たちの先生はとても親切です)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Lehrerin</div>
+              <div class="vocab-japanese">先生（女性）</div>
+              <div class="vocab-example">Die Lehrerin erklärt gut. (その女性の先生は説明が上手です)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">lernen</div>
+              <div class="vocab-japanese">学ぶ</div>
+              <div class="vocab-example">Ich lerne Deutsch. (私はドイツ語を学んでいます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">studieren</div>
+              <div class="vocab-japanese">勉強する（大学で）</div>
+              <div class="vocab-example">Er studiert Medizin. (彼は医学を勉強しています)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vocab-category" data-category="travel">
+          <h2>旅行・交通</h2>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-german">reisen</div>
+              <div class="vocab-japanese">旅行する</div>
+              <div class="vocab-example">Ich reise gern nach Europa. (私はヨーロッパに旅行するのが好きです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Zug</div>
+              <div class="vocab-japanese">電車</div>
+              <div class="vocab-example">Der Zug fährt pünktlich ab. (電車は時間通りに出発します)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Bus</div>
+              <div class="vocab-japanese">バス</div>
+              <div class="vocab-example">Ich fahre mit dem Bus zur Arbeit. (私はバスで仕事に行きます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Auto</div>
+              <div class="vocab-japanese">車</div>
+              <div class="vocab-example">Mein Auto ist rot. (私の車は赤いです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Flugzeug</div>
+              <div class="vocab-japanese">飛行機</div>
+              <div class="vocab-example">Das Flugzeug ist sehr schnell. (飛行機はとても速いです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Bahnhof</div>
+              <div class="vocab-japanese">駅</div>
+              <div class="vocab-example">Wir treffen uns am Bahnhof. (私たちは駅で会います)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Hotel</div>
+              <div class="vocab-japanese">ホテル</div>
+              <div class="vocab-example">Das Hotel ist sehr komfortabel. (そのホテルはとても快適です)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Fahrkarte</div>
+              <div class="vocab-japanese">切符</div>
+              <div class="vocab-example">Ich kaufe eine Fahrkarte. (私は切符を買います)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vocab-category" data-category="food">
+          <h2>食べ物・飲み物</h2>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-german">das Essen</div>
+              <div class="vocab-japanese">食べ物</div>
+              <div class="vocab-example">Das Essen schmeckt gut. (その食べ物は美味しいです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Brot</div>
+              <div class="vocab-japanese">パン</div>
+              <div class="vocab-example">Ich esse gern deutsches Brot. (私はドイツのパンを食べるのが好きです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Fleisch</div>
+              <div class="vocab-japanese">肉</div>
+              <div class="vocab-example">Ich esse kein Fleisch. (私は肉を食べません)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Gemüse</div>
+              <div class="vocab-japanese">野菜</div>
+              <div class="vocab-example">Gemüse ist gesund. (野菜は健康に良いです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Obst</div>
+              <div class="vocab-japanese">果物</div>
+              <div class="vocab-example">Ich esse jeden Tag Obst. (私は毎日果物を食べます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Wasser</div>
+              <div class="vocab-japanese">水</div>
+              <div class="vocab-example">Ich trinke viel Wasser. (私はたくさん水を飲みます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Kaffee</div>
+              <div class="vocab-japanese">コーヒー</div>
+              <div class="vocab-example">Morgens trinke ich Kaffee. (朝はコーヒーを飲みます)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Restaurant</div>
+              <div class="vocab-japanese">レストラン</div>
+              <div class="vocab-example">Wir gehen ins Restaurant. (私たちはレストランに行きます)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="vocab-category" data-category="time">
+          <h2>時間・天気</h2>
+          <div class="vocab-grid">
+            <div class="vocab-card">
+              <div class="vocab-german">die Zeit</div>
+              <div class="vocab-japanese">時間</div>
+              <div class="vocab-example">Ich habe keine Zeit. (私は時間がありません)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">heute</div>
+              <div class="vocab-japanese">今日</div>
+              <div class="vocab-example">Heute ist Montag. (今日は月曜日です)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">morgen</div>
+              <div class="vocab-japanese">明日</div>
+              <div class="vocab-example">Morgen habe ich frei. (明日は休みです)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">gestern</div>
+              <div class="vocab-japanese">昨日</div>
+              <div class="vocab-example">Gestern war schönes Wetter. (昨日は良い天気でした)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">das Wetter</div>
+              <div class="vocab-japanese">天気</div>
+              <div class="vocab-example">Wie ist das Wetter? (天気はどうですか？)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">die Sonne</div>
+              <div class="vocab-japanese">太陽</div>
+              <div class="vocab-example">Die Sonne scheint. (太陽が照っています)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Regen</div>
+              <div class="vocab-japanese">雨</div>
+              <div class="vocab-example">Es gibt Regen. (雨が降っています)</div>
+            </div>
+            <div class="vocab-card">
+              <div class="vocab-german">der Schnee</div>
+              <div class="vocab-japanese">雪</div>
+              <div class="vocab-example">Im Winter fällt Schnee. (冬には雪が降ります)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>A2ドイツ語</h3>
+          <p>日本人学習者のためのゲーテA2試験対策サイト</p>
+        </div>
+        <div class="footer-section">
+          <h4>学習コンテンツ</h4>
+          <ul>
+            <li><a href="grammar.html">文法</a></li>
+            <li><a href="vocabulary.html">語彙</a></li>
+            <li><a href="exercises.html">練習問題</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>試験情報</h4>
+          <ul>
+            <li><a href="tips.html">試験対策</a></li>
+            <li><a href="#" onclick="alert('準備中です')">模擬試験</a></li>
+            <li><a href="#" onclick="alert('準備中です')">学習計画</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 A2ドイツ語学習サイト. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
