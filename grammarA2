@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ドイツ語文法 A2（ゲーテ試験用）</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ドイツ語 A2 文法まとめ</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="grammar.html">文法</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>ゲーテ A2 試験に出る文法項目</h2>
+      <p>以下はゲーテ A2 レベルで重要な文法ポイントです。それぞれに簡単な説明と例文を日本語付きで紹介します。</p>
+
+      <article>
+        <h3>1. 現在形（Präsens）</h3>
+        <p>基本的な動詞の活用。</p>
+        <p><strong>例文:</strong> Ich lerne Deutsch.（私はドイツ語を学んでいます）</p>
+      </article>
+
+      <article>
+        <h3>2. 過去形（Perfekt）</h3>
+        <p>haben または sein + 過去分詞</p>
+        <p><strong>例文:</strong> Ich habe Pizza gegessen.（私はピザを食べました）</p>
+      </article>
+
+      <article>
+        <h3>3. モーダル動詞（Modalverben）</h3>
+        <p>können, müssen, dürfen, wollen, sollen, mögen</p>
+        <p><strong>例文:</strong> Ich kann schwimmen.（私は泳げます）</p>
+      </article>
+
+      <article>
+        <h3>4. 人称代名詞と所有代名詞</h3>
+        <p>ich, du, er... / mein, dein, sein...</p>
+        <p><strong>例文:</strong> Das ist mein Buch.（これは私の本です）</p>
+      </article>
+
+      <article>
+        <h3>5. 前置詞（mit, zu, auf など）と格</h3>
+        <p>特に3格・4格の使い方に注意。</p>
+        <p><strong>例文:</strong> Ich gehe zur Schule.（私は学校に行きます）</p>
+      </article>
+
+      <article>
+        <h3>6. 形容詞の変化（定冠詞付き）</h3>
+        <p>例: der kleine Hund, die schöne Frau</p>
+        <p><strong>例文:</strong> Ich sehe den kleinen Hund.（私はその小さな犬を見ます）</p>
+      </article>
+
+      <article>
+        <h3>7. zu + 不定詞</h3>
+        <p>目的や意図を表す。</p>
+        <p><strong>例文:</strong> Ich habe keine Zeit, Deutsch zu lernen.（ドイツ語を学ぶ時間がありません）</p>
+      </article>
+
+      <article>
+        <h3>8. 接続詞（weil, dass, wenn など）</h3>
+        <p>副文（従属節）の語順に注意。</p>
+        <p><strong>例文:</strong> Ich bleibe zu Hause, weil ich krank bin.（病気なので家にいます）</p>
+      </article>
+
+      <article>
+        <h3>9. 疑問文と語順</h3>
+        <p>ja/nein 質問と W-Fragen。</p>
+        <p><strong>例文:</strong> Wo wohnst du?（どこに住んでいますか？）</p>
+      </article>
+
+      <article>
+        <h3>10. 冠詞の変化（der, die, das / ein, eine）</h3>
+        <p>格や性に応じた変化。</p>
+        <p><strong>例文:</strong> Ich habe einen Hund.（私は犬を飼っています）</p>
+      </article>
+
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 ドイツ語学習サイト</p>
+  </footer>
+</body>
+</html>
