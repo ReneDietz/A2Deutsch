@@ -66,6 +66,33 @@ body {
   transform: translateY(-2px);
 }
 
+/* Special styling for Cafetalk link */
+.cafetalk-link {
+  background: linear-gradient(45deg, #ff6b6b, #ffa500) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.cafetalk-link:hover {
+  background: linear-gradient(45deg, #ff5252, #ff9800) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  }
+  50% {
+    box-shadow: 0 2px 15px rgba(255, 107, 107, 0.5);
+  }
+  100% {
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  }
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -120,13 +147,14 @@ body {
 }
 
 .btn-primary {
-  background: white;
-  color: #667eea;
+  background: linear-gradient(45deg, #ff6b6b, #ffa500);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
 }
 
 .btn-secondary {
@@ -173,6 +201,31 @@ body {
 .feature-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Special styling for Cafetalk feature card */
+.cafetalk-feature {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+  color: white;
+  border: none;
+}
+
+.cafetalk-feature h3,
+.cafetalk-feature p {
+  color: white;
+}
+
+.cafetalk-feature .feature-link {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.cafetalk-feature .feature-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 .feature-icon {
